@@ -67,13 +67,20 @@ $form.addEventListener('submit', (event) => {
         headers: {
             "Content-Type": `multipart/form-data; boundary=${formData._boundary}`
         }
-    }).then(res => console.log(res));
-    
-
+    })
+    .then(function(res) {
+        console.log('Enviado com sucesso');
+    })
+    .catch(function(error) {
+        console.log('Arquivo não enviado');
+    })
+        
     axios.post('https://form-email-backend.herokuapp.com/', body)
     .then(function (res) {
-        console.log('E-mail enviado com sucesso');
-        console.log('resposta', res.data);
+        window.location = 'https://junioralvesbr.github.io/form-email-frontend/success.html';
+    })
+    .catch(function(error) {
+        window.location = 'https://junioralvesbr.github.io/form-email-frontend/fail.html';
     })
 
 })
