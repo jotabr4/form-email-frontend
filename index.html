@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Cadastro</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/settings/color.css">
+    <link rel="stylesheet" href="css/generic/reset.css">
+
+    <link rel="stylesheet" href="css/elements/base.css">
+
+    <link rel="stylesheet" href="css/object/subtitle.css">
+    <link rel="stylesheet" href="css/object/input.css">
+    <link rel="stylesheet" href="css/object/description.css">
+    <link rel="stylesheet" href="css/object/inputRadio.css">
+    <link rel="stylesheet" href="css/object/button.css">
+
+    <link rel="stylesheet" href="css/components/container.css">
+    <link rel="stylesheet" href="css/components/item.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="form" method="POST" name="form" autocomplete="on" novalidate="true" accept-charset="utf-8" encType="multipart/form-data">
+            
+            <ul class="list">
+
+                <li class="item">
+                    <label for="name" class="subtitle">
+                        Nome
+                        <span class="required">*</span>
+                    </label>
+                    <div>
+                        <input type="text" class="input inputName" name="name" id="name" required size="20">
+                        <div class="description">Digite o seu nome</div>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label for="telephone" class="subtitle">
+                        Telefone residencial ou contato / recado
+                    </label>
+                    <div>
+                        <input type="tel" class="input inputTelephone" name="telephone" id="telephone" autocomplete="off" placeholder="(xx) xxxx-xxxx">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label for="cellphone" class="subtitle">
+                        Telefone Celular
+                        <span class="required">*</span>
+                    </label>
+                    <div>
+                        <input type="tel" class="input inputCellphone" name="cellphone" id="cellphone" autocomplete="off" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">Estado Civil</label>
+                    <div class="civil-wrapper">
+                        <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="solteiro" value="solteiro">
+                        <label for="solteiro" class="inputRadio inputCivil">Solteiro</label>
+                    </div>
+                    <div class="civil-wrapper">
+                        <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="casado" value="casado">
+                        <label for="casado" class="inputRadio inputCivil">Casado</label>
+                    </div>
+                    <div class="civil-wrapper">
+                        <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="divorciado" value="divorciado">
+                        <label for="divorciado" class="inputRadio inputCivil">Divorciado</label>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">
+                        Tirar Foto da CNH ou do CPF ou do RG
+                        <span class="required">*</span>
+                    </label>
+                    <div>
+                        <label for="inputDocument" class="button">Tirar Foto</label>
+                        <input type="file" accept="image/*" capture id="inputDocument" class="input inputPicture" name="inputDocument" required>
+                        <img class="pictureImg" alt="" id="documentImg">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">
+                        Tirar Foto do comprovante de endereço
+                        <span class="required">*</span>
+                    </label>
+                    <div>
+                        <label for="inputComp" class="button">Tirar Foto</label>
+                        <input type="file" accept="image/*" capture id="inputComp" class="input inputPicture" name="inputComp" required>
+                        <img class="pictureImg" alt="" id="compImg">
+                    </div>
+                </li>
+
+                <li class="item address-section">
+                    <label class="subtitle">Endereço Residencial</label>
+                    <div>
+                        <input type="text" class="input inputAddress" name="address" id="address" size="20">
+                        <div class="description">Endereço</div>
+                    </div>
+                    <div>
+                        <input type="text" class="input inputDistrict" name="district" id="district" size="20">
+                        <div class="description">Bairro</div>
+                    </div>
+                    <div class="inputLocal">
+                        <div>
+                            <input type="text" class="input inputCity" name="city" id="city" size="20">
+                            <div class="description">Cidade</div>
+                        </div>
+                        <div>
+                            <input type="text" class="input inputEstate" name="estate" id="estate" size="20">
+                            <div class="description">Estado</div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" class="input inputCEP" name="cep" id="cep" size="10">
+                        <div class="description">CEP / Código Postal</div>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">
+                        Tempo de Residencia
+                        <span class="required">*</span>
+                    </label>
+                    <div class="years-wrapper">
+                        <input type="radio" class="input inputRadio inputYears" name="inputYears" id="oneyear" required value="menos 1 ano">
+                        <label for="oneyear" class="inputRadio inputYears">menos de 1 ano</label>
+                    </div>
+                    <div class="years-wrapper">
+                        <input type="radio" class="input inputRadio inputYears" name="inputYears" id="twoYears" required value="1 a 2 anos">
+                        <label for="twoYears" class="inputRadio inputYears">de 1 a 2 anos</label>
+                    </div>
+                    <div class="years-wrapper">
+                        <input type="radio" class="input inputRadio inputYears" name="inputYears" id="treeYears" required value="2 a 3 anos">
+                        <label for="treeYears" class="inputRadio inputYears">de 2 a 3 anos</label>
+                    </div>
+                    <div class="years-wrapper">
+                        <input type="radio" class="input inputRadio inputYears" name="inputYears" id="fourYears" required value="3 a 4 anos">
+                        <label for="fourYears" class="inputRadio inputYears">de 3 a 4 anos</label>
+                    </div>
+                    <div class="years-wrapper">
+                        <input type="radio" class="input inputRadio inputYears" name="inputYears" id="fiveYears" required value="5 anos">
+                        <label for="fiveYears" class="inputRadio inputYears">acima de 5 anos</label>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="item">
+                    <label for="company" class="subtitle">Nome da empresa atual</label>
+                    <div>
+                        <input type="text" class="input inputCompany" name="company" id="company" size="20">
+                        <div class="description">Digite o nome da empresa atual</div>
+                    </div>
+                </li>
+                
+                <li class="item">
+                    <label for="companyFone" class="subtitle">Telefone Comercial</label>
+                    <div>
+                        <input type="text" class="input companyFone" name="companyFone" id="companyFone" size="20">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label for="date" class="subtitle">Data de admissão</label>
+                    <div>
+                        <input type="text" class="input inputDate" name="date" id="date" >
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label for="salary" class="subtitle">
+                        Salario
+                        <span class="required">*</span>
+                    </label>
+                    <div>
+                        <input type="text" class="input inputSalary" name="salary" id="salary" required placeholder="R$ 0,00">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">Tirar Foto do comprovante de renda</label>
+                    <div>
+                        <label for="inputRenda" class="button">Tirar Foto</label>
+                        <input type="file" accept="image/*" capture id="inputRenda" class="input inputPicture" name="inputRenda">
+                        <img class="pictureImg" alt="" id="rendaImg">
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="item">
+                    <label class="subtitle">
+                        Referencias pessoais 1
+                        <span class="required">*</span>
+                    </label>
+                    <div class="reference-wrapper">
+                        <div>
+                            <input type="text" class="input inputReferenceName1" name="ReferenceName1" id="ReferenceName1" required size="20">
+                            <div class="description">Nome</div>
+                        </div>
+                        <div>
+                            <input type="tel" class="input inputReferenceTell1" name="referenceTell1" id="referenceTell1" required size="20">
+                            <div class="description">Telefone</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">
+                        Referencias pessoais 2
+                        <span class="required">*</span>
+                    </label>
+                    <div class="reference-wrapper">
+                        <div>
+                            <input type="text" class="input inputReferenceName2" name="ReferenceName2" id="ReferenceName2" required size="20">
+                            <div class="description">Nome</div>
+                        </div>
+                        <div>
+                            <input type="tel" class="input inputReferenceTell2" name="referenceTell2" id="referenceTell2" required size="20">
+                            <div class="description">Telefone</div>
+                        </div>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="item bank">
+                    <label class="subtitle">Dados do Banco</label>
+                    <div>
+                        <input type="text" class="input inputBank" name="bank" id="bank" size="20">
+                        <div class="description">Nome do Banco</div>
+                    </div>
+                    <div>
+                        <input type="text" class="input inputAgency" name="agency" id="agency" size="20">
+                        <div class="description">Agencia</div>
+                    </div>
+                    <div>
+                        <input type="text" class="input inputCount" name="count" id="count" size="20">
+                        <div class="description">Conta</div>
+                    </div>
+                    <div>
+                        <input type="text" class="input inputTimeCount" name="timeCount" id="timeCount" size="20">
+                        <div class="description">Tempo de conta aberta</div>
+                    </div>
+                </li>
+
+                <div class="send-container">
+                    <input type="submit" class="button" value='Enviar'/>
+                </div>
+
+            </ul>
+
+            
+        </form>
+    </div>
+
+    <script src="js/takePicture.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/submit.js"></script>
+
+</body>
+</html>

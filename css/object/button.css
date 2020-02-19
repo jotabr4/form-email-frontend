@@ -1,0 +1,56 @@
+.item .inputPicture {
+    visibility: hidden;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    margin-top: 15px;
+    border: 1px solid #2646bd;
+    border-radius: 8px;
+    background: #4883ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4883ff), to(#2646bd));
+    background: -moz-linear-gradient(top, #4883ff, #2646bd);
+    background: linear-gradient(to bottom, #4883ff, #2646bd);
+    -webkit-box-shadow: #569dff 0px 0px 40px 0px;
+    -moz-box-shadow: #569dff 0px 0px 40px 0px;
+    box-shadow: #569dff 0px 0px 40px 0px;
+    text-shadow: #17296f 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid #2d52de;
+    background: #569dff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#569dff), to(#2e54e3));
+    background: -moz-linear-gradient(top, #569dff, #2e54e3);
+    background: linear-gradient(to bottom, #569dff, #2e54e3);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    background: #2646bd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2646bd), to(#2646bd));
+    background: -moz-linear-gradient(top, #2646bd, #2646bd);
+    background: linear-gradient(to bottom, #2646bd, #2646bd);
+}
+
+.send-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .button {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+}

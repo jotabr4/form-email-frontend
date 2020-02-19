@@ -1,0 +1,10 @@
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--color-third);
+    text-transform: uppercase;
+}
+
+.subtitle > .required {
+    color: var(--color-fifth);
+}

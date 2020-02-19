@@ -1,0 +1,17 @@
+body {
+    box-sizing: border-box;
+    background-color: var(--color-first);
+}
+
+ul {
+    background-color: var(--color-second);
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    margin-top: 50px;
+    width: 100%;

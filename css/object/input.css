@@ -1,0 +1,9 @@
+.input {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px 5px;
+    border: 1px solid var(--color-fourth);
+}
+
+.input::placeholder {
+    color: var(--color-fourth);
+}

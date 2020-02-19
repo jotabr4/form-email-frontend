@@ -1,0 +1,70 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.item > .subtitle {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.item .input {
+    width: 40%;
+    padding: 5px;
+}
+
+.item .civil-wrapper, .years-wrapper {
+    padding-top: 20px;
+}
+
+.item .inputCivil, .item .inputYears  {
+    width: 10px;
+}
+
+.item .pictureImg {
+    width: 340px;
+    height: 340px;
+    transform: rotate(90deg);
+    display: none;
+}
+
+.item.address-section > div,
+.item .reference-wrapper > div,
+.item.bank > div {
+    padding-top: 15px;
+}
+
+.item.address-section .input {
+    margin-bottom: 5px;
+}
+
+.item .inputLocal {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.item .inputCity, .item .inputEstate {
+    width: 100%;
+}
+
+.item .inputCEP {
+    width: 200px;
+}
+
+@media (max-width: 800px) {
+    .item > .subtitle {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .item .inputLocal {
+        display: block;
+        width: 50%;
+    }
+}

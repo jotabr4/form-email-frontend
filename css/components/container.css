@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .form {
+    width: 80vw;
+}
+
+@media (max-width: 800px) {
+    .container > .form {
+        width: 100vw;
+    }
+}
