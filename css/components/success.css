@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.fa-check-circle, .title {
+    color: var(--color-sixth);
+    margin: 0;
+}
+
+.fa-check-circle {
+    font-size: 100px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.message {
+    font-size: 20px;
+}
+

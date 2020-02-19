@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.fa-times-circle, .title {
+    color: var(--color-fifth);
+    margin: 0;
+}
+
+.fa-times-circle {
+    font-size: 100px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.message {
+    font-size: 20px;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+    <link rel="stylesheet" href="css/settings/color.css">
+    <link rel="stylesheet" href="css/generic/reset.css">
+    <link rel="stylesheet" href="css/elements/base.css">
+    
+    <link rel="stylesheet" href="css/components/fail.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <i class="far fa-times-circle"></i>
+        <h1 class="title">Falhou</h1>
+        <p class="message">Sua mensagem não foi enviado tente novamente</p>
+        <button onclick="goBack()">Voltar</button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/b79cfa4082.js" crossorigin="anonymous"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
