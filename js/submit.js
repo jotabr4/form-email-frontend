@@ -21,6 +21,7 @@ const $inputBank = $form.querySelector('.inputBank');
 const $inputAgency = $form.querySelector('.inputAgency');
 const $inputCount = $form.querySelector('.inputCount');
 const $inputTimeCount = $form.querySelector('.inputTimeCount');
+const $containerSend = $form.querySelector('.container-send');
 
 $form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -63,6 +64,8 @@ $form.addEventListener('submit', (event) => {
     formData.append('imageComp', $imageComp.files[0]);
     formData.append('imageRenda', $imageRenda.files[0]);
 
+    $containerSend.classList.add('-active');
+
     axios.post('https://form-email-backend.herokuapp.com/uploads', formData, {
         headers: {
             "Content-Type": `multipart/form-data; boundary=${formData._boundary}`
@@ -73,7 +76,7 @@ $form.addEventListener('submit', (event) => {
         submit(body);
     })
     .catch(function(error) {
-        console.log('Arquivo não enviado');
+        window.location = 'https://junioralvesbr.github.io/form-email-frontend/fail.html';
     })
        
     const submit = (body) => {

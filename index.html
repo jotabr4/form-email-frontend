@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/components/container.css">
     <link rel="stylesheet" href="css/components/item.css">
+    <link rel="stylesheet" href="css/components/send.css">
 
 
 </head>
@@ -252,9 +253,16 @@
                         <div class="description">Tempo de conta aberta</div>
                     </div>
                 </li>
-
+                
                 <div class="send-container">
                     <input type="submit" class="button" value='Enviar'/>
+                </div>
+                
+                <div class="container-send">
+                    <i class='fa fa-sync-alt'></i>
+                    <p class="send-text">Enviando...</p>
+                    <p class="send-message">Aguarde</p>
+                    <p class="send-message">mensagem sendo Enviada</p>
                 </div>
 
             </ul>
@@ -264,6 +272,7 @@
     </div>
 
     <script src="js/takePicture.js"></script>
+    <script src="https://kit.fontawesome.com/b79cfa4082.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/submit.js"></script>
 
