@@ -70,18 +70,21 @@ $form.addEventListener('submit', (event) => {
     })
     .then(function(res) {
         console.log('Enviado com sucesso');
+        submit(body);
     })
     .catch(function(error) {
         console.log('Arquivo não enviado');
     })
-        
-    axios.post('https://form-email-backend.herokuapp.com/', body)
-    .then(function (res) {
-        window.location = 'https://junioralvesbr.github.io/form-email-frontend/success.html';
-    })
-    .catch(function(error) {
-        window.location = 'https://junioralvesbr.github.io/form-email-frontend/fail.html';
-    })
+       
+    const submit = (body) => {
+        axios.post('https://form-email-backend.herokuapp.com/', body)
+        .then(function (res) {
+            window.location = 'https://junioralvesbr.github.io/form-email-frontend/success.html';
+        })
+        .catch(function(error) {
+            window.location = 'https://junioralvesbr.github.io/form-email-frontend/fail.html';
+        })
+    }
 
 })
 
