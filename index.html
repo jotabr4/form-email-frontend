@@ -42,24 +42,24 @@
                 </li>
 
                 <li class="item">
-                    <label for="telephone" class="subtitle">
-                        Telefone residencial ou contato / recado
-                    </label>
-                    <div>
-                        <input type="tel" class="input inputTelephone" name="telephone" id="telephone" autocomplete="off" placeholder="(xx) xxxx-xxxx">
-                    </div>
-                </li>
-
-                <li class="item">
                     <label for="cellphone" class="subtitle">
                         Telefone Celular
                         <span class="required">*</span>
                     </label>
                     <div>
-                        <input type="tel" class="input inputCellphone" name="cellphone" id="cellphone" autocomplete="off" placeholder="(xx) xxxxx-xxxx" required>
+                        <input type="tel" class="input inputCellphone" name="cellphone" id="cellphone" autocomplete="on" placeholder="(xx) xxxxx-xxxx" required>
                     </div>
                 </li>
 
+                <li class="item">
+                    <label for="telephone" class="subtitle">
+                        Telefone residencial ou contato / recado
+                    </label>
+                    <div>
+                        <input type="tel" class="input inputTelephone" name="telephone" id="telephone" autocomplete="on" placeholder="(xx) xxxx-xxxx">
+                    </div>
+                </li>
+              
                 <li class="item">
                     <label class="subtitle">Estado Civil</label>
                     <div class="civil-wrapper">
@@ -103,26 +103,26 @@
                 <li class="item address-section">
                     <label class="subtitle">Endereço Residencial</label>
                     <div>
-                        <input type="text" class="input inputAddress" name="address" id="address" size="20">
                         <div class="description">Endereço</div>
+                        <input type="text" class="input inputAddress" name="address" id="address" size="20">
                     </div>
                     <div>
-                        <input type="text" class="input inputDistrict" name="district" id="district" size="20">
                         <div class="description">Bairro</div>
+                        <input type="text" class="input inputDistrict" name="district" id="district" size="20">
                     </div>
                     <div class="inputLocal">
                         <div>
-                            <input type="text" class="input inputCity" name="city" id="city" size="20">
                             <div class="description">Cidade</div>
+                            <input type="text" class="input inputCity" name="city" id="city" size="20">
                         </div>
                         <div>
-                            <input type="text" class="input inputEstate" name="estate" id="estate" size="20">
                             <div class="description">Estado</div>
+                            <input type="text" class="input inputEstate" name="estate" id="estate" size="20">
                         </div>
                     </div>
                     <div>
-                        <input type="text" class="input inputCEP" name="cep" id="cep" size="10">
                         <div class="description">CEP / Código Postal</div>
+                        <input type="number" class="input inputCEP" name="cep" id="cep" size="10">
                     </div>
                 </li>
 
@@ -166,14 +166,14 @@
                 <li class="item">
                     <label for="companyFone" class="subtitle">Telefone Comercial</label>
                     <div>
-                        <input type="text" class="input companyFone" name="companyFone" id="companyFone" size="20">
+                        <input type="tel" class="input companyFone" name="companyFone" id="companyFone" size="20" placeholder="(xx) xxxxx-xxxx">
                     </div>
                 </li>
 
                 <li class="item">
                     <label for="date" class="subtitle">Data de admissão</label>
                     <div>
-                        <input type="text" class="input inputDate" name="date" id="date" >
+                        <input type="text" class="input inputDate" name="date" id="date" placeholder="dd/mm/aaaa">
                     </div>
                 </li>
 
@@ -183,7 +183,7 @@
                         <span class="required">*</span>
                     </label>
                     <div>
-                        <input type="text" class="input inputSalary" name="salary" id="salary" required placeholder="R$ 0,00">
+                        <input type="number" class="input inputSalary" name="salary" id="salary" required placeholder="R$ 0,00">
                     </div>
                 </li>
 
@@ -205,12 +205,12 @@
                     </label>
                     <div class="reference-wrapper">
                         <div>
-                            <input type="text" class="input inputReferenceName1" name="ReferenceName1" id="ReferenceName1" required size="20">
                             <div class="description">Nome</div>
+                            <input type="text" class="input inputReferenceName1" name="ReferenceName1" id="ReferenceName1" required size="20">
                         </div>
                         <div>
-                            <input type="tel" class="input inputReferenceTell1" name="referenceTell1" id="referenceTell1" required size="20">
                             <div class="description">Telefone</div>
+                            <input type="tel" class="input inputReferenceTell1" name="referenceTell1" id="referenceTell1" required size="20" placeholder="(xx) xxxxx-xxxx">
                         </div>
                     </div>
                 </li>
@@ -222,12 +222,12 @@
                     </label>
                     <div class="reference-wrapper">
                         <div>
-                            <input type="text" class="input inputReferenceName2" name="ReferenceName2" id="ReferenceName2" required size="20">
                             <div class="description">Nome</div>
+                            <input type="text" class="input inputReferenceName2" name="ReferenceName2" id="ReferenceName2" required size="20">
                         </div>
                         <div>
-                            <input type="tel" class="input inputReferenceTell2" name="referenceTell2" id="referenceTell2" required size="20">
                             <div class="description">Telefone</div>
+                            <input type="tel" class="input inputReferenceTell2" name="referenceTell2" id="referenceTell2" required size="20" placeholder="(xx) xxxxx-xxxx">
                         </div>
                     </div>
                 </li>
@@ -237,20 +237,20 @@
                 <li class="item bank">
                     <label class="subtitle">Dados do Banco</label>
                     <div>
-                        <input type="text" class="input inputBank" name="bank" id="bank" size="20">
                         <div class="description">Nome do Banco</div>
+                        <input type="text" class="input inputBank" name="bank" id="bank" size="20">
                     </div>
                     <div>
-                        <input type="text" class="input inputAgency" name="agency" id="agency" size="20">
                         <div class="description">Agencia</div>
+                        <input type="number" class="input inputAgency" name="agency" id="agency" size="20">
                     </div>
                     <div>
-                        <input type="text" class="input inputCount" name="count" id="count" size="20">
                         <div class="description">Conta</div>
+                        <input type="number" class="input inputCount" name="count" id="count" size="20">
                     </div>
                     <div>
-                        <input type="text" class="input inputTimeCount" name="timeCount" id="timeCount" size="20">
                         <div class="description">Tempo de conta aberta</div>
+                        <input type="text" class="input inputTimeCount" name="timeCount" id="timeCount" size="20">
                     </div>
                 </li>
                 
