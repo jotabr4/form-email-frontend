@@ -62,17 +62,19 @@
               
                 <li class="item">
                     <label class="subtitle">Estado Civil</label>
-                    <div class="civil-wrapper">
-                        <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="solteiro" value="solteiro">
-                        <label for="solteiro" class="inputRadio inputCivil">Solteiro</label>
-                    </div>
-                    <div class="civil-wrapper">
-                        <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="casado" value="casado">
-                        <label for="casado" class="inputRadio inputCivil">Casado</label>
-                    </div>
-                    <div class="civil-wrapper">
-                        <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="divorciado" value="divorciado">
-                        <label for="divorciado" class="inputRadio inputCivil">Divorciado</label>
+                    <div>
+                        <div class="civil-wrapper">
+                            <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="solteiro" value="solteiro">
+                            <label for="solteiro" class="inputRadio inputCivil">Solteiro</label>
+                        </div>
+                        <div class="civil-wrapper">
+                            <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="casado" value="casado">
+                            <label for="casado" class="inputRadio inputCivil">Casado</label>
+                        </div>
+                        <div class="civil-wrapper">
+                            <input type="radio" class="input inputRadio inputCivil" name="inputCivil" id="divorciado" value="divorciado">
+                            <label for="divorciado" class="inputRadio inputCivil">Divorciado</label>
+                        </div>
                     </div>
                 </li>
 
@@ -88,6 +90,8 @@
                     </div>
                 </li>
 
+                <hr>
+                
                 <li class="item">
                     <label class="subtitle">
                         Tirar Foto do comprovante de endereço
@@ -99,7 +103,7 @@
                         <img class="pictureImg" alt="" id="compImg">
                     </div>
                 </li>
-
+                
                 <li class="item address-section">
                     <label class="subtitle">Endereço Residencial</label>
                     <div>
@@ -156,6 +160,15 @@
                 <hr>
 
                 <li class="item">
+                    <label class="subtitle">Tirar Foto do comprovante de renda</label>
+                    <div>
+                        <label for="inputRenda" class="button">Tirar Foto</label>
+                        <input type="file" accept="image/*" capture id="inputRenda" class="input inputPicture" name="inputRenda">
+                        <img class="pictureImg" alt="" id="rendaImg">
+                    </div>
+                </li>
+
+                <li class="item">
                     <label for="company" class="subtitle">Nome da empresa atual</label>
                     <div>
                         <input type="text" class="input inputCompany" name="company" id="company" size="20">
@@ -184,15 +197,6 @@
                     </label>
                     <div>
                         <input type="number" class="input inputSalary" name="salary" id="salary" required placeholder="R$ 0,00">
-                    </div>
-                </li>
-
-                <li class="item">
-                    <label class="subtitle">Tirar Foto do comprovante de renda</label>
-                    <div>
-                        <label for="inputRenda" class="button">Tirar Foto</label>
-                        <input type="file" accept="image/*" capture id="inputRenda" class="input inputPicture" name="inputRenda">
-                        <img class="pictureImg" alt="" id="rendaImg">
                     </div>
                 </li>
 
@@ -247,10 +251,6 @@
                     <div>
                         <div class="description">Conta</div>
                         <input type="number" class="input inputCount" name="count" id="count" size="20">
-                    </div>
-                    <div>
-                        <div class="description">Tempo de conta aberta</div>
-                        <input type="text" class="input inputTimeCount" name="timeCount" id="timeCount" size="20">
                     </div>
                 </li>
                 

@@ -20,7 +20,6 @@ const $inputReferenceTell2 = $form.querySelector('.inputReferenceTell2');
 const $inputBank = $form.querySelector('.inputBank');
 const $inputAgency = $form.querySelector('.inputAgency');
 const $inputCount = $form.querySelector('.inputCount');
-const $inputTimeCount = $form.querySelector('.inputTimeCount');
 const $containerSend = $form.querySelector('.container-send');
 
 $form.addEventListener('submit', (event) => {
@@ -51,7 +50,6 @@ $form.addEventListener('submit', (event) => {
         'inputBank': $inputBank.value,
         'inputAgency': $inputAgency.value,
         'inputCount': $inputCount.value,
-        'inputTimeCount': $inputTimeCount.value,
     }
 
     // images
