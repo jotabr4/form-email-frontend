@@ -11,7 +11,7 @@
 }
 
 .item .input {
-    width: 40%;
+    width: 80%;
     padding: 5px;
 }
 
@@ -76,9 +76,9 @@
         font-size: 12px;
     }
 
-    .item .inputLocal {
+    .item .inputLocal, .item .inputCEP {
         display: block;
-        width: 50%;
+        width: 70%;
     }
 }
 

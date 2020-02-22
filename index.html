@@ -71,7 +71,7 @@
 
                 <li class="item">
                     <label class="subtitle">
-                        Tirar Foto da CNH ou do CPF ou do RG
+                        Tirar Foto da CNH ou do RG
                         <span class="required">*</span>
                     </label>
                     <div>
@@ -111,15 +111,6 @@
                 </li>
 
                 <li class="item">
-                    <label for="emailConjuge" class="subtitle">
-                        E-mail do esposo(a)
-                    </label>
-                    <div>
-                        <input type="email" class="input inputEmailConjuge" name="emailConjuge" id="emailConjuge" placeholder="mail@dominio.com">
-                    </div>
-                </li>
-
-                <li class="item">
                     <label for="dataConjuge" class="subtitle">
                         Data de nascimento Esposo(a)
                     </label>
@@ -127,18 +118,7 @@
                         <input type="number" class="input inputDataConjuge" name="dataConjuge" id="dataConjuge" placeholder="dd/mm/AAAA">
                     </div>
                 </li>
-
-                <li class="item">
-                    <label class="subtitle">
-                        Tirar Foto da CNH ou do CPF ou do RG do esposo(a);
-                    </label>
-                    <div>
-                        <label for="inputDocumentConjuge" class="button">Tirar Foto</label>
-                        <input type="file" accept="image/*" capture id="inputDocumentConjuge" class="input inputPicture" name="inputDocumentConjuge">
-                        <img class="pictureImg" alt="" id="documentConjugeImg">
-                    </div>
-                </li>
-
+               
                 <hr>
                 
                 <li class="item">
@@ -166,16 +146,16 @@
                     <div class="inputLocal">
                         <div>
                             <div class="description">Cidade</div>
-                            <input type="text" class="input inputCity" name="city" id="city" size="20">
+                            <input type="text" class="input inputCity" name="city" id="city">
                         </div>
                         <div>
                             <div class="description">Estado</div>
-                            <input type="text" class="input inputEstate" name="estate" id="estate" size="20">
+                            <input type="text" class="input inputEstate" name="estate" id="estate">
                         </div>
                     </div>
                     <div>
                         <div class="description">CEP / Código Postal</div>
-                        <input type="number" class="input inputCEP" name="cep" id="cep" size="10">
+                        <input type="number" class="input inputCEP" name="cep" id="cep">
                     </div>
                 </li>
 
@@ -219,10 +199,12 @@
                 </li>
 
                 <li class="item">
-                    <label for="company" class="subtitle">Nome da empresa atual ou Função</label>
+                    <label for="company" class="subtitle">Nome da empresa atual ou profissão</label>
                     <div>
                         <input type="text" class="input inputCompany" name="company" id="company" size="20">
                     </div>
+                    <div class="description">Informe a empresa que você trabalha, em caso de autonomo, informe sua profissão</div>
+
                 </li>
                 
                 <li class="item">
@@ -258,11 +240,11 @@
                     </label>
                     <div class="reference-wrapper">
                         <div>
-                            <div class="description">Nome</div>
+                            <div class="subtitle">Nome</div>
                             <input type="text" class="input inputReferenceName1" name="ReferenceName1" id="ReferenceName1" required size="20">
                         </div>
                         <div>
-                            <div class="description">Telefone</div>
+                            <div class="subtitle">Telefone</div>
                             <input type="tel" class="input inputReferenceTell1" name="referenceTell1" id="referenceTell1" required size="20" placeholder="(xx) xxxxx-xxxx">
                         </div>
                     </div>
@@ -275,11 +257,11 @@
                     </label>
                     <div class="reference-wrapper">
                         <div>
-                            <div class="description">Nome</div>
+                            <div class="subtitle">Nome</div>
                             <input type="text" class="input inputReferenceName2" name="ReferenceName2" id="ReferenceName2" required size="20">
                         </div>
                         <div>
-                            <div class="description">Telefone</div>
+                            <div class="subtitle">Telefone</div>
                             <input type="tel" class="input inputReferenceTell2" name="referenceTell2" id="referenceTell2" required size="20" placeholder="(xx) xxxxx-xxxx">
                         </div>
                     </div>
