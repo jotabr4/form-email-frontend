@@ -15,13 +15,21 @@
     padding: 5px;
 }
 
-.item .civil-wrapper {
-    display: inline;
-    padding-left: 10px;
+.item .civil-wrapper, .years-wrapper {
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
-.item .civil-wrapper, .years-wrapper {
-    padding-top: 20px;
+.item .civil-wrapper:first-child, .years-wrapper:first-child {
+    padding-left: 0;
+}
+
+.item .civil-wrapper {
+    display: inline;
+}
+
+.years-container {
+    display: flex;
 }
 
 .item .inputCivil, .item .inputYears  {
@@ -71,5 +79,11 @@
     .item .inputLocal {
         display: block;
         width: 50%;
+    }
+}
+
+@media (max-width: 420px) {
+    .item {
+        padding-left: 20px;
     }
 }
