@@ -36,7 +36,7 @@
                         <span class="required">*</span>
                     </label>
                     <div>
-                        <input type="text" class="input inputName" name="name" id="name" required size="20">
+                        <input type="text" class="input inputName" name="name" id="name" required size="30">
                         <div class="description">Digite o seu nome</div>
                     </div>
                 </li>
@@ -59,7 +59,30 @@
                         <input type="tel" class="input inputTelephone" name="telephone" id="telephone" autocomplete="on" placeholder="(xx) xxxx-xxxx">
                     </div>
                 </li>
+
+                <li class="item">
+                    <label for="email" class="subtitle">
+                        E-mail
+                    </label>
+                    <div>
+                        <input type="email" class="input inputEmail" name="email" id="email" autocomplete="on" placeholder="mail@dominio.com">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">
+                        Tirar Foto da CNH ou do CPF ou do RG
+                        <span class="required">*</span>
+                    </label>
+                    <div>
+                        <label for="inputDocument" class="button">Tirar Foto</label>
+                        <input type="file" accept="image/*" capture id="inputDocument" class="input inputPicture" name="inputDocument" required>
+                        <img class="pictureImg" alt="" id="documentImg">
+                    </div>
+                </li>
               
+                <hr>
+
                 <li class="item">
                     <label class="subtitle">Estado Civil</label>
                     <div>
@@ -79,14 +102,40 @@
                 </li>
 
                 <li class="item">
-                    <label class="subtitle">
-                        Tirar Foto da CNH ou do CPF ou do RG
-                        <span class="required">*</span>
+                    <label for="nameConjuge" class="subtitle">
+                        Nome do esposo(a)
                     </label>
                     <div>
-                        <label for="inputDocument" class="button">Tirar Foto</label>
-                        <input type="file" accept="image/*" capture id="inputDocument" class="input inputPicture" name="inputDocument" required>
-                        <img class="pictureImg" alt="" id="documentImg">
+                        <input type="text" class="input inputNameConjuge" name="nameConjuge" id="nameConjuge" size="30">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label for="emailConjuge" class="subtitle">
+                        E-mail do esposo(a)
+                    </label>
+                    <div>
+                        <input type="email" class="input inputEmailConjuge" name="emailConjuge" id="emailConjuge" placeholder="mail@dominio.com">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label for="dataConjuge" class="subtitle">
+                        Data de nascimento Esposo(a)
+                    </label>
+                    <div>
+                        <input type="number" class="input inputDataConjuge" name="dataConjuge" id="dataConjuge" placeholder="dd/mm/AAAA">
+                    </div>
+                </li>
+
+                <li class="item">
+                    <label class="subtitle">
+                        Tirar Foto da CNH ou do CPF ou do RG do esposo(a);
+                    </label>
+                    <div>
+                        <label for="inputDocumentConjuge" class="button">Tirar Foto</label>
+                        <input type="file" accept="image/*" capture id="inputDocumentConjuge" class="input inputPicture" name="inputDocumentConjuge">
+                        <img class="pictureImg" alt="" id="documentConjugeImg">
                     </div>
                 </li>
 
@@ -142,18 +191,14 @@
                         </div>
                         <div class="years-wrapper">
                             <input type="radio" class="input inputRadio inputYears" name="inputYears" id="twoYears" required value="1 a 2 anos">
-                            <label for="twoYears" class="inputRadio inputYears">1 a 2 anos</label>
+                            <label for="twoYears" class="inputRadio inputYears">1 a 3 anos</label>
                         </div>
                         <div class="years-wrapper">
                             <input type="radio" class="input inputRadio inputYears" name="inputYears" id="treeYears" required value="2 a 3 anos">
-                            <label for="treeYears" class="inputRadio inputYears">2 a 3 anos</label>
+                            <label for="treeYears" class="inputRadio inputYears">3 a 5 anos</label>
                         </div>
                     </div>
                     <div class="years-container">    
-                        <div class="years-wrapper">
-                            <input type="radio" class="input inputRadio inputYears" name="inputYears" id="fourYears" required value="3 a 4 anos">
-                            <label for="fourYears" class="inputRadio inputYears">3 a 4 anos</label>
-                        </div>
                         <div class="years-wrapper">
                             <input type="radio" class="input inputRadio inputYears" name="inputYears" id="fiveYears" required value="5 anos">
                             <label for="fiveYears" class="inputRadio inputYears">acima de 5 anos</label>
@@ -174,10 +219,9 @@
                 </li>
 
                 <li class="item">
-                    <label for="company" class="subtitle">Nome da empresa atual</label>
+                    <label for="company" class="subtitle">Nome da empresa atual ou Função</label>
                     <div>
                         <input type="text" class="input inputCompany" name="company" id="company" size="20">
-                        <div class="description">Digite o nome da empresa atual</div>
                     </div>
                 </li>
                 
@@ -250,11 +294,11 @@
                         <input type="text" class="input inputBank" name="bank" id="bank" size="20">
                     </div>
                     <div>
-                        <div class="description">Agencia</div>
+                        <div class="description">Numero da Agência</div>
                         <input type="number" class="input inputAgency" name="agency" id="agency" size="20">
                     </div>
                     <div>
-                        <div class="description">Conta</div>
+                        <div class="description">Numero da Conta</div>
                         <input type="number" class="input inputCount" name="count" id="count" size="20">
                     </div>
                 </li>
