@@ -1,8 +1,11 @@
 const $form = document.querySelector('.form');
 const $inputName = $form.querySelector('.inputName');
-const $inputTelephone = $form.querySelector('.inputTelephone');
 const $inputCellphone = $form.querySelector('.inputCellphone');
-const $inputCivil = $form.querySelectorAll('.input.inputCivil');
+const $inputTelephone = $form.querySelector('.inputTelephone');
+const $inputEmail = $form.querySelector('.inputEmail');
+const $inputCivil = $form.querySelectorAll('.inputCivil');
+const $inputNameConjuge = $form.querySelector('.inputNameConjuge');
+const $inputDataConjuge = $form.querySelector('.inputDataConjuge');
 const $inputAddress = $form.querySelector('.inputAddress');
 const $inputDistrict = $form.querySelector('.inputDistrict');
 const $inputCity = $form.querySelector('.inputCity');
@@ -30,8 +33,11 @@ $form.addEventListener('submit', (event) => {
 
     const body = {
         'name': $inputName.value,
-        'telePhone': $inputTelephone.value,
         'cellPhone': $inputCellphone.value,
+        'telePhone': $inputTelephone.value,
+        'email': $inputEmail.value,
+        'nomeConjuge': $inputNameConjuge.value,
+        'dataConjuge': $inputDataConjuge.value,
         'inputCivil': inputCivil,
         'inputAddress': $inputAddress.value,
         'inputDistrict': $inputDistrict.value,
