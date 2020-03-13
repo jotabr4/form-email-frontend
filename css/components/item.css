@@ -15,10 +15,6 @@
     padding: 5px;
 }
 
-.item.-hide {
-    display: none;
-}
-
 .item .civil-wrapper, .years-wrapper {
     padding-left: 20px;
     padding-top: 20px;
