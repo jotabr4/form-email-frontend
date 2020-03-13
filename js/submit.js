@@ -1,5 +1,6 @@
 const $form = document.querySelector('.form');
 const $inputName = $form.querySelector('.inputName');
+const $inputCPF = $form.querySelector('.inputCPF');
 const $inputCellphone = $form.querySelector('.inputCellphone');
 const $inputTelephone = $form.querySelector('.inputTelephone');
 const $inputEmail = $form.querySelector('.inputEmail');
@@ -33,6 +34,7 @@ $form.addEventListener('submit', (event) => {
 
     const body = {
         'name': $inputName.value,
+        'CPF': $inputCPF.value,
         'cellPhone': $inputCellphone.value,
         'telePhone': $inputTelephone.value,
         'email': $inputEmail.value,
