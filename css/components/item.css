@@ -3,8 +3,6 @@
     flex-direction: column;
     padding-top: 40px;
     padding-left: 40px;
-    visibility: visible;
-    transition: visibility 3s ease-in-out;
 }
 
 .item > .subtitle {
@@ -18,7 +16,6 @@
 }
 
 .item.-hide {
-    visibility: hidden;
     display: none;
 }
 

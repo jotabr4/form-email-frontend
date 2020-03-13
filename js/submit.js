@@ -34,7 +34,7 @@ $form.addEventListener('submit', (event) => {
 
     const body = {
         'name': $inputName.value,
-        'CPF': $inputCPF.value,
+        'cpf': $inputCPF.value,
         'cellPhone': $inputCellphone.value,
         'telePhone': $inputTelephone.value,
         'email': $inputEmail.value,
