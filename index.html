@@ -47,7 +47,7 @@
                         <span class="required">*</span>
                     </label>
                     <div>
-                        <input type="text" class="input inputCPF" name="cpf" id="cpf" autocomplete="on" placeholder="000000000-00" required>
+                        <input type="text" class="input inputCPF" name="cpf" id="cpf" autocomplete="on" maxlength="14" required pattern="[0-9]{11}" onkeydown="CPFmask(this)">
                     </div>
                 </li>
 
@@ -165,7 +165,7 @@
                     </div>
                     <div>
                         <div class="description">CEP / Código Postal</div>
-                        <input type="number" class="input inputCEP" name="cep" id="cep">
+                        <input type="text" class="input inputCEP" name="cep" id="cep" maxlength="9" onkeydown="CEPmask(this);">
                     </div>
                 </li>
 
@@ -312,6 +312,7 @@
         </form>
     </div>
 
+    <script src="js/mask.js"></script>
     <script src="js/takePicture.js"></script>
     <script src="https://kit.fontawesome.com/b79cfa4082.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
