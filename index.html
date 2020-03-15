@@ -47,7 +47,7 @@
                         <span class="required">*</span>
                     </label>
                     <div>
-                        <input type="text" class="input inputCPF" name="cpf" id="cpf" autocomplete="on" maxlength="14" required pattern="[0-9]{11}" onkeydown="CPFmask(this)">
+                        <input type="text" inputmode="numeric" class="input inputCPF" name="cpf" id="cpf" autocomplete="on" maxlength="14" required pattern="[0-9]{11}" onkeypress="CPFmask(this)">
                     </div>
                 </li>
 
@@ -57,7 +57,7 @@
                         <span class="required">*</span>
                     </label>
                     <div>
-                        <input type="tel" class="input inputCellphone" name="cellphone" id="cellphone" autocomplete="on" placeholder="(xx) xxxxx-xxxx" required>
+                        <input type="tel" class="input inputCellphone" name="cellphone" id="cellphone" autocomplete="on" maxlength="15" placeholder="(xx) xxxxxxxxx" onkeypress="TELmask(this);" required>
                     </div>
                 </li>
 
@@ -66,7 +66,7 @@
                         Telefone residencial ou contato / recado
                     </label>
                     <div>
-                        <input type="tel" class="input inputTelephone" name="telephone" id="telephone" autocomplete="on" placeholder="(xx) xxxx-xxxx">
+                        <input type="tel" class="input inputTelephone" name="telephone" id="telephone" autocomplete="on" placeholder="(xx) xxxxxxxx" maxlength="14" onkeypress="TELmask(this);">
                     </div>
                 </li>
 
@@ -125,7 +125,7 @@
                         Data de nascimento Esposo(a)
                     </label>
                     <div>
-                        <input type="text" class="input inputDataConjuge" name="dataConjuge" id="dataConjuge" placeholder="dd/mm/AAAA">
+                        <input type="text" inputmode="numeric" class="input inputDataConjuge" name="dataConjuge" id="dataConjuge" maxlength="10" placeholder="dd/mm/AAAA" onkeypress="DATAmask(this);"">
                     </div>
                 </li>
                
@@ -165,7 +165,7 @@
                     </div>
                     <div>
                         <div class="description">CEP / Código Postal</div>
-                        <input type="text" class="input inputCEP" name="cep" id="cep" maxlength="9" onkeydown="CEPmask(this);">
+                        <input type="text" inputmode="numeric" class="input inputCEP" name="cep" id="cep" maxlength="9" onkeydown="CEPmask(this);">
                     </div>
                 </li>
 
@@ -220,14 +220,14 @@
                 <li class="item">
                     <label for="companyFone" class="subtitle">Telefone Comercial</label>
                     <div>
-                        <input type="tel" class="input companyFone" name="companyFone" id="companyFone" size="20" placeholder="(xx) xxxxx-xxxx">
+                        <input type="tel" class="input companyFone" name="companyFone" id="companyFone" size="20" placeholder="(xx) xxxxxxxxx" maxlength="15" onkeypress="TELmask(this);">
                     </div>
                 </li>
 
                 <li class="item">
                     <label for="date" class="subtitle">Data de admissão</label>
                     <div>
-                        <input type="text" class="input inputDate" name="date" id="date" placeholder="dd/mm/aaaa">
+                        <input type="text" inputmode="numeric" class="input inputDate" name="date" id="date" maxlength="10" placeholder="dd/mm/aaaa" onkeypress="DATAmask(this);">
                     </div>
                 </li>
 
@@ -255,7 +255,7 @@
                         </div>
                         <div>
                             <div class="subtitle">Telefone</div>
-                            <input type="tel" class="input inputReferenceTell1" name="referenceTell1" id="referenceTell1" required size="20" placeholder="(xx) xxxxx-xxxx">
+                            <input type="tel" class="input inputReferenceTell1" name="referenceTell1" id="referenceTell1" required size="20" placeholder="(xx) xxxxxxxxx" maxlength="15" onkeypress="TELmask(this);">
                         </div>
                     </div>
                 </li>
@@ -272,7 +272,7 @@
                         </div>
                         <div>
                             <div class="subtitle">Telefone</div>
-                            <input type="tel" class="input inputReferenceTell2" name="referenceTell2" id="referenceTell2" required size="20" placeholder="(xx) xxxxx-xxxx">
+                            <input type="tel" class="input inputReferenceTell2" name="referenceTell2" id="referenceTell2" required size="20" placeholder="(xx) xxxxxxxxx" maxlength="15" onkeypress="TELmask(this);">
                         </div>
                     </div>
                 </li>
@@ -307,7 +307,6 @@
                 </div>
 
             </ul>
-
             
         </form>
     </div>

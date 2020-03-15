@@ -17,3 +17,30 @@ function CEPmask(obj) {
 
     obj.value = cep;
 }
+
+function TELmask(obj) {
+    let tel = obj.value;
+
+    tel = tel.replace(/\D/g,"");
+    tel = tel.replace(/^(\d{2})(\d)/g,"($1) $2");
+    // tel = tel.replace(/(\d)(\d{3})$/,"$1-$2");
+
+    obj.value = tel;
+}
+
+function DATAmask(obj) {
+    let data = obj.value;
+
+    if (data.length == 2) {
+        data = data + '/';
+        obj.value = data;
+        return true;
+    }
+
+    if (data.length == 5) {
+        data = data + '/';
+        obj.value = data;
+        return true;
+    }
+
+}
