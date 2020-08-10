@@ -88,7 +88,7 @@ $form.addEventListener('submit', (event) => {
     const submit = (body) => {
         axios.post('https://form-email-backend.herokuapp.com/', body)
         .then(function (res) {
-            window.location = 'https://jotbr4.github.io/form-email-frontend/success.html';
+            window.location = 'https://jotabr4.github.io/form-email-frontend/success.html';
         })
         .catch(function(error) {
             window.location = 'https://jotabr4.github.io/form-email-frontend/fail.html';
