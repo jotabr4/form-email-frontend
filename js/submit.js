@@ -77,22 +77,22 @@ $form.addEventListener('submit', (event) => {
             "Content-Type": `multipart/form-data; boundary=${formData._boundary}`
         }
     })
-    .then(function(res) {
-        console.log('Enviado com sucesso');
-        submit(body);
-    })
-    .catch(function(error) {
-        window.location = 'https://jotabr4.github.io/form-email-frontend/fail.html';
-    })
-       
+        .then(function (res) {
+            console.log('Enviado com sucesso');
+            submit(body);
+        })
+        .catch(function (error) {
+            window.location = 'https://junioralvesbr.github.io/form-email-frontend/fail.html';
+        })
+
     const submit = (body) => {
         axios.post('https://form-email-backend.herokuapp.com/', body)
-        .then(function (res) {
-            window.location = 'https://jotabr4.github.io/form-email-frontend/success.html';
-        })
-        .catch(function(error) {
-            window.location = 'https://jotabr4.github.io/form-email-frontend/fail.html';
-        })
+            .then(function (res) {
+                window.location = 'https://junioralvesbr.github.io/form-email-frontend/success.html';
+            })
+            .catch(function (error) {
+                window.location = 'https://junioralvesbr.github.io/form-email-frontend/fail.html';
+            })
     }
 
 })
